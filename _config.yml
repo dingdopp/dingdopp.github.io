@@ -87,7 +87,7 @@ exclude:
 include:
 - _my_tags
 - _posts
-- _site
+- _layouts
 
 #exclude: [vendor]
 
