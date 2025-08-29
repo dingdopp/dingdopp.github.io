@@ -29,16 +29,28 @@ url: "https://dingdopp.me"
 #twitter_username: jekyllrb
 github_username: dingdopp 
 
-# Build settings
-theme: jekyll-bear-theme
-plugins:
-  - jekyll-feed
-  - jekyll-redirect-from
-
-whitelist:
-  - jekyll-redirect-from
-
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
 markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# Build settings
+#theme: jekyll-bear-theme
+remote_theme: knhash/jekyllBear
+plugins:
+  - jekyll-remote-theme
+#  - jekyll-feed
+#  - jekyll-redirect-from
+
+#whitelist:
+#  - jekyll-redirect-from
+
 
 compress_html:
   clippings: all
@@ -49,10 +61,10 @@ compress_html:
   ignore:
     envs: []
 
-# sass:
-#   sass_dir: css
-#   style:    compressed
-#   quiet_deps: true
+sass:
+  sass_dir: css
+  style:    compressed
+#  quiet_deps: true
 
 collections:
   my_tags:
@@ -74,11 +86,19 @@ future: false
 exclude:
 - README.md
 - LICENSE.md
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
 
-exclude: [vendor]
+include:
+- _my_tags
+- _posts
+- _site
+
+#exclude: [vendor]
 
 Blog: /blog
-Life: /life
 
 # Add general links to site pages here
 links:
