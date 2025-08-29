@@ -3,4 +3,4 @@ layout: default
 title: Hello
 ---
 
-[!Green Heron](/assets/GreenHeron.jpg)
+[!Green Heron](./assets/GreenHeron.jpg)
