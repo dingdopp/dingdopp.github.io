@@ -41,16 +41,9 @@ kramdown:
   syntax_highlighter: rouge
 
 # Build settings
-#theme: jekyll-bear-theme
 remote_theme: knhash/jekyllBear
 plugins:
   - jekyll-remote-theme
-#  - jekyll-feed
-#  - jekyll-redirect-from
-
-#whitelist:
-#  - jekyll-redirect-from
-
 
 compress_html:
   clippings: all
@@ -61,9 +54,9 @@ compress_html:
   ignore:
     envs: []
 
-sass:
-  sass_dir: css
-  style:    compressed
+#sass:
+#  sass_dir: css
+#  style:    compressed
 #  quiet_deps: true
 
 collections:
