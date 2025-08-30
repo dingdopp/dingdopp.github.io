@@ -1,8 +1,8 @@
 ---
 layout: blog
 title: Blog
-description: Here be writings
+description: Good things are coming
 permalink: /blog
 ---
 
-Here be writings. Mostly mundane, sometimes fanciful.
+[ *good things are coming* ]
